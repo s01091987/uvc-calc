@@ -1,0 +1,475 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+  display: block
+
+$Raleway-Regular: "Raleway-Regular", sans-serif
+$Raleway-Bold: "Raleway-Bold", sans-serif
+$OpenSansBold: "OpenSansBold", sans-serif
+$PtSans: "PtSans", sans-serif
+$Righteous: "Righteous", sans-serif
+$blue-color: #26C7FC
+$dark-blue-color: #3A8DA7
+$gray: #2B2F31
+$orange: #FA9232
+$lightgray: #243238
+
+body
+  line-height: 1
+  position: relative
+  font-family: $Raleway-Regular
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+.clearfix:before, .clearfix:after
+ content: " "
+ display: table
+
+.clearfix:after
+ clear: both
+
+.left
+ float: left
+
+.right
+ float: right
+
+.center
+ text-align: center
+
+.text-right
+ text-align: right
+
+.flex
+ display: flex
+ align-items: center
+
+img.response-img
+  max-width: 100%
+  height: auto
+  margin: 0
+
+#header
+ min-height: 100vh
+ background-size: cover
+ position: relative
+ background-position: center top
+ color: #fff
+ &::before
+  display: block
+  content: ""
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0,0,0,0.2) 
+ p
+  padding: 0 15px
+.parallax-window
+ min-height: 100vh
+ position: relative
+ background: transparent
+ .container
+  position: relative
+.logo
+  height: 70px
+  width: 200px
+  background-image: url(../img/logo.png)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: contain
+  margin: 0 auto
+.flex-container-column
+  display: flex
+  position: absolute
+  min-height: 100%
+  flex-direction: column
+  z-index: 1
+  width: 100%
+  .flex-item
+    display: flex
+    flex-basis: 25vh
+    flex-shrink: 0
+    justify-content: center
+    align-items: center
+    text-align: center
+  .flex-item:first-child
+    flex-direction: column
+    justify-content: space-around  
+  .phones
+   font-size: 20px
+   color: $dark-blue-color
+   .fa
+    padding-right: 7px
+    color: #fff
+   p
+    font-size: 22px
+    font-weight: 600
+h2
+  color: #fff
+  font-size: 26px
+  text-transform: uppercase
+  text-align: center
+  line-height: 1.5
+  letter-spacing: 2px
+  font-weight: 600
+p
+  line-height: 1.5
+.counter
+  margin: 0 25px
+  text-align: center
+.counter-place
+  color: $dark-blue-color
+  font-family: $PtSans
+  font-size: 80px
+
+.flex-container
+ display: flex
+ .flex-item
+  flex: 1 
+ .img
+  height: auto
+  margin-bottom: -3px 
+ .desc
+   display: flex
+   flex-direction: column
+   justify-content: space-around
+   align-items: center
+
+h2.heading
+  color: $gray
+  text-transform: none
+  font-weight: 300
+
+p.about
+  padding: 0 20px
+  line-height: 2
+  font-size: 18px
+
+a.btn
+  text-decoration: none
+  position: relative
+  display: inline-block
+  padding: 15px 20px
+  background-color: $orange
+  text-transform: uppercase
+  color: $gray
+  transition: all 0.5s ease
+  letter-spacing: 1px
+  text-align: center
+  max-width: 200px 
+  font-weight: 600
+  &:hover
+    background-color: darken($orange, 10%)
+  .border-left
+   position: absolute
+   left: 0
+   top: 0
+   width: 2px
+   background-color: $lightgray
+   height: 0
+  .border-top
+   position: absolute
+   height: 2px
+   background-color: $lightgray
+   width: 0
+   left: 0
+   top: 0
+  .border-right
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 2px
+    background-color: $lightgray
+    height: 0
+  .border-bottom
+    position: absolute
+    height: 2px
+    background-color: $lightgray
+    width: 0
+    right: 0
+    bottom: 0 
+      
+.container-fluid
+  padding: 0
+
+#services
+  padding: 100px 0  
+  position: relative
+  background-color: $gray
+  color: #fff  
+  h2
+    text-transform: uppercase
+    text-align: center
+    position: relative
+    display: inline-block
+    padding: 5px 10px 
+    padding-bottom: 10px
+    margin-bottom: 20px
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      height: 1px
+      width: 100px
+      background-color: $orange
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      height: 7px
+      width: 7px
+      background-color: #fff
+      bottom: -3px
+      left: 50%
+      transform: translateX(-50%)
+      border-radius: 50%
+      z-index: 5
+  .flex-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 15px
+    i
+      font-size: 60px
+      padding-bottom: 30px
+    h3
+      text-transform: uppercase
+      font-weight: 600
+      padding-bottom: 20px
+      color: $blue-color
+      line-height: 1.5
+      font-size: 16px
+      text-align: center
+    p
+      text-align: justify
+      font-size: 14px
+
+#advantages
+  padding: 100px 0  
+  background-color: #F3F6F7
+  h2
+   color: $gray
+   padding-bottom: 10px
+   &:before
+      content: ''
+      display: block
+      position: absolute
+      height: 1px
+      width: 100px
+      background-color: $orange
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+   &:after
+      content: ''
+      display: block
+      position: absolute
+      height: 7px
+      width: 7px
+      background-color: $gray
+      bottom: -3px
+      left: 50%
+      transform: translateX(-50%)
+      border-radius: 50%
+      z-index: 5
+  .flex-container
+    display: flex
+    flex-direction: column
+    padding: 30px 15px 0 15px
+    .flex-item
+      display: flex
+      align-items: center
+      i
+        padding-right: 15px
+        font-size: 20px
+  p.title
+    font-size: 18px
+    padding-bottom: 25px
+
+.contact-us
+  width: 160px
+  height: 50px
+  background-color: #5BA0D0  
+  position: fixed
+  bottom: 0
+  right: 50px
+  color: #fff
+  border-top-right-radius: 10px
+  border-top-left-radius: 10px
+  cursor: pointer
+  transition: all 0.5s ease
+  &:hover
+    background-color: darken( #5BA0D0, 5%)
+  p
+    line-height: 50px
+    text-align: center
+  i
+    padding-right: 10px
+    font-size: 20px
+
+#contact-us-form
+ position: fixed
+ right: 50px
+ bottom: -354px 
+ width: 320px
+ margin: auto
+ padding: 30px 20px
+ background: #fff
+ border-radius: 10px
+ z-index: 10
+ h2
+  background-color: #5BA0D0
+  font-family: $Raleway-Bold
+  color: #fff
+  letter-spacing: 1px
+  font-size: 18px
+  text-transform: uppercase
+  padding: 20px
+  margin: -30px -20px 30px
+  position: relative
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
+  i    
+    position: absolute
+    right: 15px
+    top: 25px
+    cursor: pointer
+ input
+  box-sizing: border-box
+  outline: none
+  display: block
+  width: 100%
+  padding: 7px
+  border: none
+  border-bottom: 1px solid #ddd
+  background: transparent
+  margin-bottom: 10px
+  font-family: $Raleway-Regular
+  height: 45px
+  &:focus
+   outline: none 
+
+#form
+ position: relative
+ max-width: 320px
+ margin: auto
+ padding: 30px 20px
+ background: #fff
+ h2
+  background: #4D4D4D
+  font-family: $Raleway-Bold
+  color: #fff
+  letter-spacing: 1px
+  font-size: 18px
+  text-transform: uppercase
+  padding: 20px
+  margin: -30px -20px 30px
+ input
+  box-sizing: border-box
+  outline: none
+  display: block
+  width: 100%
+  padding: 7px
+  border: none
+  border-bottom: 1px solid #ddd
+  background: transparent
+  margin-bottom: 10px
+  font-family: $Raleway-Regular
+  height: 45px
+  &:focus
+   outline: none 
+.mfp-close-btn-in 
+ .mfp-close
+  background: #fff
+  position: absolute
+  top: -22px
+  right: -22px
+  border: 1px solid #000
+  border-radius: 50%
+  opacity: 1 
+.send
+ margin-top: 20px
+ letter-spacing: 1px
+ display: inline-block
+ text-transform: uppercase
+ font-family: $Raleway-Bold
+ font-size: 14px
+ color: #fff
+ border: none
+ outline: none
+ text-decoration: none
+ background-color: #038FF4
+ padding: 13px 30px
+ transition: all 0.5s ease
+ cursor: pointer
+ &:hover
+  text-decoration: none
+  color: #fff
+  background-color: darken($blue-color, 15)
+ &:active, &:visited
+  text-decoration: none
+
+//for shop
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled).shop-button
+  width: 100%
+  text-align: left
+  background-color: #009aff
+  color: #fff
+  text-transform: uppercase
+  padding: 9px 25px
+  border: none
+  border-bottom: 1px solid black
+  input[type=checkbox], input[type=radio]
+   margin-right: 15px
+label
+  cursor: pointer
+
+
+@import "fonts"
+@import "media"
+    
+      
+
+
+
+
+

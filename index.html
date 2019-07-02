@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Calculator</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="js/shop.js" type="text/javascript" ></script>
+	
+</head>
+<body>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6">
+				<h4 class="center">Тип авто</h4>
+				<form>
+				  <button type="button" data-toggle="tooltip" data-placement="right" class="shop-button" title="Платформа предназначена для взвешивания грузовых автомобилей бортового типа, длина 8м"><input type="radio" id="auto_type1" name="auto_type" value="Truck" checked="checked">Бортовой</button><br>
+				  <button type="button" data-toggle="tooltip" data-placement="right" class="shop-button" title="Платформа предназначена для взвешивания грузовиков типа полуприцеп, длина 14м"><input type="radio" id="auto_type2" name="auto_type" value="Semitrailer">Полуприцеп</button><br>
+				  <button type="button" data-toggle="tooltip" data-placement="right" class="shop-button" title="Платформа предназначена для взвешивания грузовых автомобилей бортового типа + прицеп, длина 18м"><input type="radio" id="auto_type3" name="auto_type" value="TruckAndTrailer">Бортовой + прицеп</button><br>
+				  <button type="button" data-toggle="tooltip" data-placement="right" class="shop-button" title="Платформа предназначена для взвешивания грузовых автомобилей бортового типа + 3х-осного прицепа, длина от 22м"><input type="radio" id="auto_type4" name="auto_type" value="TruckAnd3xTrailer">Бортовой + 3х-осный прицеп</button><br>
+				</form> 
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<h4 class="center">Нагрузка на ось</h4>
+				<form>
+				  <button type="button" data-toggle="tooltip" data-placement="right" class="shop-button" title="Платформа предназначена для взвешивания грузовых автомобилей бортового типа"><input type="radio" name="auto_type" value="15T" checked="">Стандарт 15 тонн</button><br>
+				  <button type="button" data-toggle="tooltip" data-placement="right" class="shop-button" title="Tooltip on top"><input type="radio" name="auto_type" value="20T" checked="checked">Усиленная 20 тонн</button>
+				</form> 
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<h4 class="center">Тип платформы</h4>
+				<form>
+				  <button type="button" data-toggle="tooltip" data-placement="left" class="shop-button" title="Платформа предназначена для взвешивания грузовых автомобилей бортового типа"><input type="radio" name="auto_type" value="Width1m" checked="checked">Колея 1м</button><br>
+				  <button type="button" data-toggle="tooltip" data-placement="left" class="shop-button" title="Tooltip on top"><input type="radio" name="auto_type" value="Width1.25m" checked="">Колея 1.25м</button><br>
+				  <button type="button" data-toggle="tooltip" data-placement="left" class="shop-button" title="Tooltip on top"><input type="radio" name="auto_type" value="Width1.5m">Сплошная (колея 1.5м)</button>
+				</form> 
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				<h4 class="center">Тип датчиков</h4>
+				<form>
+				  <button type="button" data-toggle="tooltip" data-placement="right" class="shop-button" title="Платформа предназначена для взвешивания грузовых автомобилей бортового типа"><input type="radio" name="auto_type" value="A" checked="checked">Аналоговые</button><br>
+				  <button type="button" data-toggle="tooltip" data-placement="right" class="shop-button" title="Tooltip on top"><input type="radio" name="auto_type" value="D">Цифровые</button><br>
+				</form> 
+			</div>
+		</div>
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="animal<br><img src=&quot;https://lh3.googleusercontent.com/216Q7ikTi5IhWqqX3Hp657IeH_Q1hQK0AdYmUZ2A3psUNGrQDXck9sN1ntVWQQh503ihMD_ZmZhTTUsKDtEAfprF2p8BJb8pB6h1rGNEWuaG56cQjjB2aBAGncfrGh-MQIPcXuPnJnQAWHHJ77-H_pqDaEKFU85yopHU7j_ePT4mtEorvU_PrFOEKhGzTGj7ZmfO0_NFkWRctThbsKNeSVK9tyxRi_-cbXzxaI2tjB2lBhbXY1ywTAjM9d8wTIn9wOTRxUzf9WcsPwjdhvsQPmWitZE3V7Ft9x1qA1pzh5MQ6wkUgAbjl1ODnaTAN1Mjwh_yyJo67P3aZGyrwqWIrdy0ZJxztB2QiOGCzLSOoakPh88OHC1NOe2XSEVFkfNVd5vrRDSrH7HVAD07do6ISY_Gj06lCUR_hl3ddkhV-WUCvkt3ur9gwWDCAMc3oYUjBCNumXs3PxNNNxnUj-u5xj770XgzF1WHoeZ54eOWxvIpj1BKkLfVjvs8TirsVwPtlveBB0RKg2G3nVAevaG8o9njkD5jlAM55gFr_qZiyZ3UJU2PAsmMhfAcBQZScxPBVyq5-tv3YroP9hWiLKH9YjH2imnN0BeMamXechQbT6n5jCmo56o6CmoaW_TBSlyVMnV-vV-kmgxzlpJyTkXxIieu_NNCMUg=w493-h657-no&quot;>">
+    Tooltip with Image
+  </button>
+		<div class="row">
+			<div class="col-lg-12">
+				Ориентировочная стоимость <span class="total_cost"></span>
+			</div>
+		</div>
+	</div>	
+	<script>
+		$('[data-toggle="tooltip"]').tooltip();
+	</script>
+</body>
+</html>
